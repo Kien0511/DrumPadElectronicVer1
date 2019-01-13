@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/ibtnBack"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@color/colorBackground"
+                        android:src="@drawable/ic_backarrow"
+                        android:scaleType="fitCenter"
+                        android:padding="15dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Records"
+                        android:textColor="@color/colorWhite"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/ibtnCheckAll"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@color/colorBackground"
+                        android:src="@drawable/ic_selectall"
+                        android:scaleType="fitCenter"
+                        android:padding="15dp"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/ibtnDelete"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@color/colorBackground"
+                        android:src="@drawable/ic_delete"
+                        android:scaleType="fitCenter"
+                        android:padding="15dp"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/ibtnOption"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@color/colorBackground"
+                        android:src="@drawable/ic_option"
+                        android:scaleType="fitCenter"
+                        android:padding="15dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorView"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcvListRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/llBehindDialog"
+            android:orientation="vertical"
+            android:background="@color/colorBehindDialog"
+            android:visibility="gone"
+            ></LinearLayout>
+    </FrameLayout>
+</LinearLayout>

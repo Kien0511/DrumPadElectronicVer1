@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Drum Pad Electronic</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="purchase_cancel">You have declined payment</string>
+    <string name="billing_not_initialized">Billing not initialized.</string>
+    <string name="thank_you_purchased">Thank you for your purchase!</string>
+
+
+    <string name="IIIIIIII_A" translatable="false">/6499/example/interstitial</string>
+    <string name="NNNNNNNN_L_A" translatable="false">/6499/example/native</string>
+    <string name="NNNNNNNN_S_A" translatable="false">/6499/example/native</string>
+    <string name="VVVVVVVV_A" translatable="false"></string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/colorDialog"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/edtPresetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHintBackground"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:hint="Preset Name"
+                android:padding="15dp"
+                android:textColorHint="@color/colorView"
+                android:maxLength="10"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type Name for this preset"
+                android:textColor="@color/colorView"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/txtSavePreset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE PRESET"
+                android:textSize="24sp"
+
+                android:textColor="@color/colorTextPink"
+
+                />
+
+            <TextView
+                android:id="@+id/txtCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:textSize="24sp"
+
+                android:textColor="@color/colorView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="myCustomMenuTextApearance" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:windowBackground">@color/colorBackgroundMenu</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="changeColorRatingBar" parent="AppTheme">
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">#4E515E</item>
+        <item name="colorControlActivated">#F5C50E</item>
+    </style>
+
+</resources>

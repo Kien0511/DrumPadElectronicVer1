@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llTimeName"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:padding="70dp"
+            android:src="@drawable/avatar_d"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTimeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llBottom"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abcaaaaaaaaaa"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/txtPresetName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Preset: "
+                    android:textColor="@color/colorView"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/txtQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity: "
+                    android:textColor="@color/colorView"
+                    android:layout_marginLeft="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+                <TextView
+                    android:id="@+id/txtTimePresent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="abc"
+                    android:textColor="@color/colorView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <SeekBar
+                    android:id="@+id/skbDrumPad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:progressBackgroundTint="@color/colorWhite"
+                    android:progressBackgroundTintMode="@color/colorWhite"
+                    android:progressTint="#FFDD0B"
+                    android:thumb="@drawable/custom_thumb_seekbar"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+                <TextView
+                    android:id="@+id/txtTimeTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="abc"
+                    android:textColor="@color/colorView" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+                <ImageButton
+                    android:id="@+id/ibtnReplay"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@color/colorBackground"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_replay_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <ImageButton
+                        android:id="@+id/ibtnPrev"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@color/colorBackground"
+                        android:padding="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_previous" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/ibtnMusic"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@color/colorBackground"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_pause" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left">
+
+                    <ImageButton
+                        android:id="@+id/ibtnNext"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@color/colorBackground"
+                        android:padding="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_next" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="0">
+
+                <ImageButton
+                    android:id="@+id/ibtnShuffle"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@color/colorBackground"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_shuffle_off" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

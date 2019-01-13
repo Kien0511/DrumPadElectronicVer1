@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:background="@drawable/banner1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/txtSoundPackageName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="30sp"
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold"
+                                android:text="abc"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/txtSoundPackageContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="abcdxyz"
+                                android:textSize="20sp"
+
+                                android:textColor="@color/colorWhite"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <Button
+                    android:id="@+id/btnTrial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Try it 3 Days (Watch Ads)"
+                    android:textSize="16sp"
+                    android:background="@color/colorYellow"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <Button
+                    android:id="@+id/btnGet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Purchase ( $2,99 )"
+                    android:textSize="16sp"
+                    android:background="@color/colorYellow"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ibtnCancel"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:src="@drawable/close"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:padding="4dp"
+            />
+
+    </FrameLayout>
+</RelativeLayout>

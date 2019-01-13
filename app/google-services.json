@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "701229397448",
+    "firebase_url": "https://drumpadelectronic.firebaseio.com",
+    "project_id": "drumpadelectronic",
+    "storage_bucket": "drumpadelectronic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701229397448:android:87fb0c396ae2ce0c",
+        "android_client_info": {
+          "package_name": "com.example.nguyentrungkien.drumpadelectronic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701229397448-hi0qcn1vn2qcpddh9o7egskfeau4phtc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nguyentrungkien.drumpadelectronic",
+            "certificate_hash": "1c7ab83811724ecd64112bb8694a42114b70a0cc"
+          }
+        },
+        {
+          "client_id": "701229397448-dee4ktv2jtmj3sk99f98rluv9gau8rbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB78Q0G5eY3EMlLN-fKf8FfSS1ZGcFHONc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701229397448-dee4ktv2jtmj3sk99f98rluv9gau8rbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

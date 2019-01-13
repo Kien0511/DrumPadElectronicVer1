@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_d_icon"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtFileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="acb"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/txtDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Duration: "
+                    android:textColor="@color/colorView"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:textColor="@color/colorView"
+                    android:textSize="12sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" MB "
+                    android:textColor="@color/colorView"
+                    android:textSize="12sp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ibtnCheckDelete"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_checkbox_uncheck"
+                android:scaleType="fitCenter"
+                android:padding="15dp"
+                android:background="@color/colorBackground"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ibtnOption"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_option"
+                android:scaleType="fitCenter"
+                android:padding="15dp"
+                android:background="@color/colorBackground"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

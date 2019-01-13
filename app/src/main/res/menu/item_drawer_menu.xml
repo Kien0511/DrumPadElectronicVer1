@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemRemoveAds"
+        android:icon="@drawable/removeads_white"
+        android:title="Remove ads"></item>
+
+    <item
+        android:icon="@drawable/ic_pitchadjust"
+        android:id="@+id/itemPitchadjust"
+        android:title="Pitch adjust"
+        ></item>
+
+    <item
+        android:icon="@drawable/ic_recordlist"
+        android:id="@+id/itemListRecord"
+        android:title="List Record"
+        ></item>
+    <item
+        android:icon="@drawable/ic_star"
+        android:id="@+id/itemRateApp"
+        android:title="Rate app"></item>
+    <item
+        android:icon="@drawable/ic_share"
+        android:id="@+id/itemShareApp"
+        android:title="Share app"></item>
+    <item
+        android:icon="@drawable/pollicy_white"
+        android:title="Policy"></item>
+    <item
+        android:icon="@drawable/ic_feedback"
+        android:id="@+id/itemFeedback"
+        android:title="Feedback"></item>
+</menu>
